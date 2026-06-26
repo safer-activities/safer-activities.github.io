@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAFER-Activities: A Dataset for Smart Assessment of Fall Events and Routine Activities</title>
+  <meta name="description" content="SAFER-Activities: a dataset for fall detection and physical activity monitoring with frame-level annotations and a dedicated wheelchair-user subset. ECCV 2026.">
+  <meta property="og:title" content="SAFER-Activities (ECCV 2026)">
+  <meta property="og:description" content="A dataset for fall detection and routine activity monitoring, with frame-level annotations and a dedicated wheelchair-user subset.">
+  <meta property="og:type" content="website">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+
+<main class="wrap">
+
+  <header class="hero">
+    <div class="venue">ECCV&nbsp;2026</div>
+    <h1 class="title">SAFER&#8209;Activities</h1>
+    <p class="subtitle">A Dataset for Smart Assessment of Fall Events and Routine Activities</p>
+
+    <div class="authors">
+      <a href="#">Diwas Lamsal</a><sup>1</sup>,
+      <a href="#">Pramod Wickramatilake</a><sup>2</sup>,
+      <a href="#">Jednipat Moonrinta</a><sup>2</sup>,
+      <a href="#">Mongkol Ekpanyapong</a><sup>2</sup>,
+      <a href="#">Matthew N. Dailey</a><sup>2</sup>
+    </div>
+    <div class="affil"><sup>1</sup>KU Leuven &nbsp;·&nbsp; <sup>2</sup>Asian Institute of Technology</div>
+
+    <nav class="links">
+      <span class="btn soon"><i class="fas fa-file-pdf"></i><span>Paper (coming soon)</span></span>
+      <a class="btn" href="https://huggingface.co/datasets/SAFER-Activities/SAFER-Activities"><span class="emoji">🤗</span><span>Dataset</span></a>
+      <a class="btn" href="https://github.com/cannon281/Safer-Activities"><i class="fab fa-github"></i><span>Code</span></a>
+    </nav>
+  </header>
+
+  <section class="teaser">
+    <div class="grid">
+      <img src="static/gifs/teaser-1.gif" alt="A participant falling, across multiple camera views">
+      <img src="static/gifs/teaser-2.gif" alt="A participant falling, across multiple camera views">
+      <img src="static/gifs/teaser-3.gif" alt="A participant falling, across multiple camera views">
+      <img src="static/gifs/teaser-4.gif" alt="A wheelchair user falling, across multiple camera views">
+    </div>
+  </section>
+
+  <section class="abstract">
+    <h2>Overview</h2>
+    <p>
+      <span class="sa">SAFER&#8209;Activities</span> is a dataset for <strong>fall detection</strong> and physical activity monitoring, with
+      <strong>frame-level</strong> annotations over long, untrimmed, multi-camera videos and a dedicated subset for
+      <strong>wheelchair users</strong>. We benchmark 2D/3D skeleton models, RGB foundation-model backbones, and
+      multimodal fusion across in-lab, out-of-distribution, wheelchair, and cross-dataset settings: skeleton models
+      generalize best under domain shift, while RGB features help in-domain but degrade sharply out of distribution.
+    </p>
+  </section>
+
+  <section class="inside">
+    <h2>What's Inside</h2>
+    <ul class="inside-list">
+      <li>Over <strong>66 hours</strong> of untrimmed video from <strong>46 participants</strong>.</li>
+      <li><strong>Frame-level</strong> start/end annotations for <strong>30</strong> action classes (<strong>85,310</strong> action instances).</li>
+      <li><strong>5,406</strong> fall instances alongside look-alike actions such as lying down and sitting.</li>
+      <li>A dedicated <strong>wheelchair</strong> subset and a pose-estimation set of 6,846 images / 8,324 annotated instances.</li>
+      <li>2D/3D pose skeletons, bounding boxes, and frozen pretrained visual features, with subject- and view-wise splits.</li>
+    </ul>
+  </section>
+
+  <section class="wild">
+    <h2>Detecting Falls in the Wild</h2>
+    <p class="lead">Models trained on <span class="sa">SAFER&#8209;Activities</span> detect falls in public videos far
+      outside the training distribution, including wheelchair users.</p>
+    <div class="grid">
+      <img src="static/gifs/fall-2.gif" alt="Real-world fall detected">
+      <img src="static/gifs/fall-3.gif" alt="Real-world fall detected">
+      <img src="static/gifs/fall-4.gif" alt="Real-world fall detected">
+      <img src="static/gifs/wc-fall-2.gif" alt="Real-world wheelchair fall detected">
+    </div>
+    <p class="caption">
+      Sources: non-wheelchair falls from <a href="https://www.youtube.com/@failarmy">FailArmy</a>;
+      wheelchair fall from <a href="https://www.youtube.com/watch?v=tL34DvqCVNs">YouTube</a>.
+    </p>
+  </section>
+
+  <footer>
+    <div class="logos">
+      <img class="logo-ait" src="static/images/AIT-white-logo.svg" alt="Asian Institute of Technology">
+      <span class="logo-center"><img src="static/images/AI-center-logo.png" alt="AI Center"></span>
+    </div>
+    <p>Dataset released under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC&nbsp;BY&#8209;NC&#8209;SA&nbsp;4.0</a>.
+      Template inspired by <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.</p>
+  </footer>
+
+</main>
+</body>
+</html>
