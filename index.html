@@ -14,6 +14,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+<style id="publication-additions">
+  .resource-icon { display: inline-block; width: 18px; height: 18px; flex: 0 0 18px; vertical-align: middle; }
+  .arxiv-logo { width: 20px; height: 20px; flex-basis: 20px; }
+  section.citation { margin-top: 56px; }
+  .citation-intro { margin: 0 auto 20px; max-width: 800px; color: #34374a; font-size: 1rem; text-align: center; }
+  .citation pre { margin: 0; padding: 20px; background: #f6f6f8; border: 1px solid #e9e9ef; border-radius: 6px; color: #34374a; font-size: .8rem; line-height: 1.65; white-space: pre; overflow-wrap: normal; overflow-x: auto; text-align: left; }
+  .citation code { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+  .citation pre:focus-visible { outline: 3px solid #5b54e8; outline-offset: 4px; }
+  @media(max-width:560px) { .citation pre { font-size: .75rem; padding: 16px; } }
+</style>
+<link rel="stylesheet" href="static/additions/additions.css">
 </head>
 <body>
 
@@ -35,6 +46,7 @@
 
     <nav class="links">
       <span class="btn soon"><i class="fas fa-file-pdf"></i><span>Paper (coming soon)</span></span>
+      <a class="btn" href="https://arxiv.org/abs/2609.08038"><svg class="resource-icon arxiv-logo" aria-hidden="true" focusable="false" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>arXiv</title><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg><span>arXiv</span></a>
       <a class="btn" href="https://huggingface.co/datasets/SAFER-Activities/SAFER-Activities"><span class="emoji">🤗</span><span>Dataset</span></a>
       <a class="btn" href="https://github.com/cannon281/Safer-Activities"><i class="fab fa-github"></i><span>Code</span></a>
       <a class="btn" href="https://github.com/safer-activities/pyskl"><i class="fab fa-github"></i><span>PySKL</span></a>
@@ -71,6 +83,7 @@
       <li>A dedicated <strong>wheelchair</strong> subset and a pose-estimation set of 6,846 images / 8,324 annotated instances.</li>
       <li>2D/3D pose skeletons, bounding boxes, and frozen pretrained visual features, with subject- and view-wise splits.</li>
     </ul>
+    <div class="addition activity-examples" id="activities-heading" role="group" aria-label="Activities by subset"><div class="action-groups"><div class="action-group" data-subset="routine" role="group" aria-labelledby="routine-heading"><h3 id="routine-heading">Non-wheelchair</h3><ul class="action-icons"><li class="action-icon" data-action="stand"><img src="static/additions/icons/routine-stand.png" alt="" width="92" height="84" loading="lazy"><span>Standing</span></li><li class="action-icon" data-action="stand_activity"><img src="static/additions/icons/routine-stand-activity.svg" alt="" width="92" height="84" loading="lazy"><span>Standing activity</span></li><li class="action-icon" data-action="walk"><img src="static/additions/icons/routine-walk.png" alt="" width="92" height="84" loading="lazy"><span>Walking</span></li><li class="action-icon" data-action="run"><img src="static/additions/icons/routine-run.png" alt="" width="92" height="84" loading="lazy"><span>Running</span></li><li class="action-icon" data-action="jump"><img src="static/additions/icons/routine-jump.png" alt="" width="92" height="84" loading="lazy"><span>Jumping</span></li><li class="action-icon" data-action="bend"><img src="static/additions/icons/routine-bend.png" alt="" width="92" height="84" loading="lazy"><span>Bending</span></li><li class="action-icon" data-action="reach"><img src="static/additions/icons/routine-reach.png" alt="" width="92" height="84" loading="lazy"><span>Reaching</span></li><li class="action-icon" data-action="sit"><img src="static/additions/icons/routine-sit.png" alt="" width="92" height="84" loading="lazy"><span>Sitting</span></li><li class="action-icon" data-action="sit_activity"><img src="static/additions/icons/routine-sit-activity.png" alt="" width="92" height="84" loading="lazy"><span>Seated activity</span></li><li class="action-icon" data-action="sitting_down"><img src="static/additions/icons/routine-sitting-down.png" alt="" width="92" height="84" loading="lazy"><span>Sitting down</span></li><li class="action-icon" data-action="getting_up"><img src="static/additions/icons/routine-getting-up.png" alt="" width="92" height="84" loading="lazy"><span>Getting up</span></li><li class="action-icon" data-action="lie_down"><img src="static/additions/icons/routine-lie-down.png" alt="" width="92" height="84" loading="lazy"><span>Lying posture</span></li><li class="action-icon" data-action="lying_down"><img src="static/additions/icons/routine-lying-down.png" alt="" width="92" height="84" loading="lazy"><span>Lying down</span></li><li class="action-icon" data-action="unstable"><img src="static/additions/icons/routine-unstable.png" alt="" width="92" height="84" loading="lazy"><span>Unstable</span></li><li class="action-icon" data-action="fall"><img src="static/additions/icons/routine-fall.png" alt="" width="92" height="84" loading="lazy"><span>Fall</span></li></ul></div><div class="action-group" data-subset="wheelchair" role="group" aria-labelledby="wheelchair-heading"><h3 id="wheelchair-heading">Wheelchair</h3><ul class="action-icons"><li class="action-icon" data-action="sit"><img src="static/additions/icons/wheelchair-sit.png" alt="" width="92" height="84" loading="lazy"><span>Sitting</span></li><li class="action-icon" data-action="sit_activity"><img src="static/additions/icons/wheelchair-sit-activity.png" alt="" width="92" height="84" loading="lazy"><span>Seated activity</span></li><li class="action-icon" data-action="bend"><img src="static/additions/icons/wheelchair-bend.png" alt="" width="92" height="84" loading="lazy"><span>Bending</span></li><li class="action-icon" data-action="pick_place"><img src="static/additions/icons/wheelchair-pick-place.png" alt="" width="92" height="84" loading="lazy"><span>Picking and placing</span></li><li class="action-icon" data-action="propel"><img src="static/additions/icons/wheelchair-propel.png" alt="" width="92" height="84" loading="lazy"><span>Propelling</span></li><li class="action-icon" data-action="get_propelled"><img src="static/additions/icons/wheelchair-get-propelled.png" alt="" width="92" height="84" loading="lazy"><span>Getting propelled</span></li><li class="action-icon" data-action="getting_up"><img src="static/additions/icons/wheelchair-getting-up.png" alt="" width="92" height="84" loading="lazy"><span>Getting up</span></li><li class="action-icon" data-action="sitting_down"><img src="static/additions/icons/wheelchair-sitting-down.png" alt="" width="92" height="84" loading="lazy"><span>Sitting down</span></li><li class="action-icon" data-action="stand"><img src="static/additions/icons/wheelchair-stand.png" alt="" width="92" height="84" loading="lazy"><span>Standing</span></li><li class="action-icon" data-action="prepare_transfer"><img src="static/additions/icons/wheelchair-prepare-transfer.png" alt="" width="92" height="84" loading="lazy"><span>Preparing to transfer</span></li><li class="action-icon" data-action="transfer"><img src="static/additions/icons/wheelchair-transfer.png" alt="" width="92" height="84" loading="lazy"><span>Transferring</span></li><li class="action-icon" data-action="lie_down"><img src="static/additions/icons/wheelchair-lie-down.png" alt="" width="92" height="84" loading="lazy"><span>Lying posture</span></li><li class="action-icon" data-action="lying_down"><img src="static/additions/icons/wheelchair-lying-down.png" alt="" width="92" height="84" loading="lazy"><span>Lying down</span></li><li class="action-icon" data-action="exercise"><img src="static/additions/icons/wheelchair-exercise.svg" alt="" width="92" height="84" loading="lazy"><span>Exercise</span></li><li class="action-icon" data-action="fall"><img src="static/additions/icons/wheelchair-fall.png" alt="" width="92" height="84" loading="lazy"><span>Fall</span></li></ul></div></div></div>
   </section>
 
   <section class="wild">
@@ -87,6 +100,23 @@
       Sources: non-wheelchair falls from <a href="https://www.youtube.com/@failarmy">FailArmy</a>;
       wheelchair fall from <a href="https://www.youtube.com/watch?v=tL34DvqCVNs">regor09</a>.
     </p>
+  </section>
+
+
+
+
+  <section class="citation" id="citation" aria-labelledby="citation-heading">
+    <h2 id="citation-heading">Citation</h2>
+    <p class="citation-intro">If you use this dataset in your research, please cite our paper:</p>
+    <pre tabindex="0" aria-label="BibTeX citation"><code id="bibtex" class="language-bibtex">@misc{lamsal2026saferactivities,
+  title={SAFER-Activities: A Dataset for Smart Assessment of Fall Events and Routine Activities},
+  author={Diwas Lamsal and Pramod Wickramatilake and Jednipat Moonrinta and Mongkol Ekpanyapong and Matthew N. Dailey},
+  year={2026},
+  eprint={2609.08038},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV},
+  url={https://arxiv.org/abs/2609.08038},
+}</code></pre>
   </section>
 
   <footer>

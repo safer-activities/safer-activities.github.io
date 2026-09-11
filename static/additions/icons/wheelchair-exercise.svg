@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Wheelchair exercise: arm stretching</title>
+  <g fill="none" stroke="#0098ce" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="43" cy="96" r="25"/>
+    <circle cx="43" cy="96" r="18" stroke-width="2"/>
+    <path d="M43 72 V120 M19 96 H67 M26 79 L60 113 M26 113 L60 79" stroke-width="1.5"/>
+    <path d="M23 48 H32 L39 83 H78 L88 111 H100 M34 69 H76"/>
+    <circle cx="91" cy="116" r="6"/>
+  </g>
+  <circle cx="60" cy="23" r="10" fill="#06284e"/>
+  <path d="M51 38 Q59 34 68 39 L72 70 L85 76 L91 101 Q92 108 86 109 Q80 110 79 103 L75 86 H53 Q44 85 44 76 Z" fill="#06284e"/>
+  <g fill="none" stroke="#06284e" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M53 44 L31 43 L14 34 M68 44 L89 44 L109 35"/>
+  </g>
+  <g fill="none" stroke="#009fcd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 24 Q24 20 34 27 M29 21 L35 27 L28 28"/>
+    <path d="M107 24 Q98 20 88 27 M93 21 L87 27 L94 28"/>
+  </g>
+</svg>

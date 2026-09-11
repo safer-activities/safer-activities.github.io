@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <title>Standing activity: waving</title>
+  <g fill="#06284e">
+    <circle cx="60" cy="20" r="11"/>
+    <path d="M50 36 Q60 31 70 36 L75 71 L70 117 Q69 124 62 123 Q57 123 57 117 L58 82 L54 82 L49 117 Q48 124 41 122 Q36 121 37 115 L43 71 Z"/>
+  </g>
+  <g fill="none" stroke="#06284e" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M49 42 L36 59 L31 81"/>
+    <path d="M70 41 L85 47 L99 27 L96 15"/>
+  </g>
+  <g fill="none" stroke="#009fcd" stroke-width="4" stroke-linecap="round">
+    <path d="M85 16 L82 10 M108 15 L113 11 M111 26 L118 26"/>
+  </g>
+</svg>
